@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Very important survey: </p>
+      <form id="survey-form">
+    <fieldset>
+<label id="name-label">Enter your name <input id="name" name="name" type="text" placeholder="Enter your name here" required/></label>
+<label id="email-label">Enter your email <input id="email" name="email" type="email" placeholder="Enter your email here" required/></label>
+<label id="number-label">Enter your age <input id="number" name="number" type="number" min="5" max="150" placeholder="Enter your age here" required/></label>
+     </fieldset>
+        <fieldset>
+        <legend>Do you own a cat? (REQUIRED)</legend>
+        <label><input value="one" type="radio" name="button" />Yes</label>
+        <label><input value="two" type="radio" name="button"/>I wish</label>
+        </fieldset>
+        <fieldset>
+        <label>How many cats would you like to own if you don't have any?
+          <select id="dropdown">
+             <option value="1">Select one</option>
+             <option value="2">5-10</option>
+             <option value="3">10-20</option>
+             <option value="4">ALL the cats!</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>What are de colours of your cat/s? (Check all that you see on your cat)
+           <input type="checkbox" value="colour">White
+           <input type="checkbox" value="colour">Black
+           <input type="checkbox" value="colour">Yellow
+           <input type="checkbox" value="colour">Brown
+           <input type="checkbox" value="colour">Gray         <input type="checkbox" value="colour">Red
+           <input type="checkbox" value="colour">Blue
+           <input type="checkbox" value="colour">Green
+        </label>
+        </fieldset>
+        <fieldset>
+<label>Say something about your love
+<textarea id="cat" name="cat" placeholder="Cat loading..."></textarea>
+</label>
+</fieldset>
+<input type="submit" id="submit">
+</form>
+</body>
+</html>
